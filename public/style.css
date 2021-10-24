@@ -1,0 +1,118 @@
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: black;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.clear {
+ clear: both;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background: url(img/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 550px; 
+}
+
+img{
+  height: 200px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.jumbotron{
+  background-color: #0077be;
+  color: white;
+}
+
+main{
+  background-color: rgba(0, 170, 225, 0.6);
+  border-radius: 10%;
+  height: 550px;
+  margin-top: 2%;
+  color: white;
+}
+
+h1{
+  padding-top: 2%;
+  text-align: center;
+  font-size: 40px;
+}
+
+label[for=time]{
+  margin-top: 4%;
+  font-size: 13px;
+  margin-left: 43%;
+  font-weight: 400;
+}
+
+input[type=time]{
+  margin-left: 2%;
+}
+
+.todaysDate{
+  margin-top: 4%;
+  font-size: 13px;
+  margin-left: 40%;
+  font-weight: 400;
+}
+
+input[type=date]{
+  margin-left: 2%;
+}
+
+label[for=cupOfWater]{
+  margin-top: 4%;
+  font-size: 13px;
+  margin-left: 35%;
+  font-weight: 400;
+}
+
+input[type=range]{
+  margin-left: 2%;
+  color: white;
+  font-size: 15px;
+}
+
+button{
+  margin-left: 49%;
+}
+
+.price-output{
+  font-size: 15px;
+  color: white;
+  margin-left: 42%;
+}
+
+.message{
+  margin-left: 38%;
+  list-style: none;
+  font-size: 15px;
+  margin-top: 4%;
+}
+
+.fa{
+  margin-left: 2%;
+}
+
+.amountResult{
+  margin-left: 3%;
+}

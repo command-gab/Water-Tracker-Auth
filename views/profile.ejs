@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Water Tracker</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+
+    <main>
+      <section>
+        <h1>Daily Water Intake</h1>
+
+        <form action="/profile" method="POST">
+
+          <p class="todaysDate">Today's date: <input id='date' type='date' name='date'></p>
+
+          <label for="time">Time:</label>
+          <input type="time" id="timeOfDrink" name="time">
+
+          <label for="cupOfWater">How many cups did you drink? </label>
+          <input type="range" name="amount" id="waterAmount" min="0" max="15" step="1" value="15">
+          <output class="price-output" for="price"></output>
+
+
+
+          <button type="submit">Submit</button>
+
+        </form>
+      </section>
+
+      <section>
+        <h3></h3>
+        <ul class="messages">
+          <% for(var i=0; i<messages.length; i++) {%>
+            <li class="message">
+              <span><%= messages[i].date %></span>
+              <span><%= messages[i].time %></span>
+              <span class="amountResult"><%= messages[i].amount %> cups</span>
+
+              <button value="<%=messages[i]._id%>" class="fa fa-trash" aria-hidden="true"></button>
+            </li>
+            <% } %>
+        </ul>
+
+      </section>
+    </main>
+
+
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/c0e668a8ad.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
