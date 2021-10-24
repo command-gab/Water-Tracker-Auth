@@ -1,13 +1,9 @@
-## Installation
+## Project: Water Tracker Auth
+This project is a full-stack appliaction with authentication where the users tracks their water intake.
 
-1. Clone repo
-2. run `npm install`
+## Details
+Languages used — Languages used — EJS, CSS, JavaScript, Node.js, Express, MongoDB.
 
-## Usage
+![daily-water](https://user-images.githubusercontent.com/88905557/138612033-a9f3d7d7-811e-45de-9957-ec3377039b84.png)
 
-1. run `node server.js`
-2. Navigate to `localhost:8080`
 
-## Credit
-
-Modified from Scotch.io's auth tutorial
