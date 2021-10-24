@@ -1,4 +1,4 @@
-## Project: Water Tracker Auth
+## Project: Water Tracker
 This project is a full-stack appliaction with authentication where the users tracks their water intake.
 
 ## Details
